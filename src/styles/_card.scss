@@ -1,0 +1,152 @@
+// Card
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px 0 rgba(77, 81, 88, 0.06);
+  border: none;
+
+  .projectAuthor {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+
+    img {
+      margin-right: 15px;
+    }
+
+    .AuthorInfo {
+      display: block;
+      width: 100%;
+
+      .AuthorName {
+        font-family: $montserrat;
+        font-size: 15px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        color: #222b45;
+        margin-bottom: 0;
+      }
+
+      .AuthorUniversity {
+        font-family: $montserrat;
+        font-size: 13px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        color: #8f9bb3;
+      }
+    }
+  }
+
+  .content-image-card {
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.2s linear;
+
+    &.overlay-image {
+      .item-image-card {
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #000000;
+          opacity: 0.2;
+        }
+      }
+    }
+
+    .item-image-card {
+      border-radius: 25px 25px 0 0;
+      display: block;
+      height: auto;
+      width: 100%;
+      z-index: 0;
+      will-change: transform;
+      background-color: #fbfcfc;
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+      transition: -webkit-transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+      transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+      transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+        -webkit-transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+      &:hover {
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+        transition: -webkit-transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+        transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+        transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+          -webkit-transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+      }
+    }
+  }
+
+  .card-body {
+    border-top: 0.5px solid #d3d3d359;
+    padding: 25px;
+    font-family: $montserrat;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+
+    .container-tag {
+      margin-bottom: 0.5rem;
+    }
+
+    .name-company {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.44;
+      color: #292929;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .footer-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-top: 10px;
+
+      .origin-company {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.86;
+        color: #6b6e77;
+        padding-right: 10px;
+      }
+
+      button.btn-arrow {
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        border-radius: 13px;
+        box-shadow: 0 2px 2px 0 rgba(0, 106, 159, 0.1);
+        background-color: #05a4df;
+
+        svg {
+          fill: #fff;
+
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}

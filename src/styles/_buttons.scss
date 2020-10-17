@@ -1,0 +1,44 @@
+// Buttons pagination
+
+.buttonsPaginations {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 35px 0;
+
+  .btn-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 106, 159, 0.1);
+    background-color: #0096e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+
+    &:disabled {
+      border: solid 1px #eaeaea;
+      background-color: #ffffff;
+
+      svg {
+        path {
+          fill: #c5c6cd;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .buttonsPaginations {
+    position: initial;
+  }
+}

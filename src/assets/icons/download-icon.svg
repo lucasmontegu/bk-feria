@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="104" viewBox="0 0 106 104">
+    <defs>
+        <filter id="jo6mvvwvda" width="146.4%" height="341.7%" x="-23.2%" y="-120.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.160784314 0 0 0 0 0.160784314 0 0 0 0 0.160784314 0 0 0 0.0986123252 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="fzu31iga8b">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g filter="url(#jo6mvvwvda)" transform="translate(-336 -815) translate(169 843)">
+                <g filter="url(#fzu31iga8b)" transform="translate(206 10)">
+                    <g fill="#000" fill-rule="nonzero" transform="translate(4 5)">
+                        <rect width="13.333" height="1.42" x="3.333" y="12.778" rx=".71"/>
+                        <path d="M3.58 11.944h1.173c.46 0 .833.374.833.834 0 .46-.373.833-.833.833H3.58c-.46 0-.833-.373-.833-.833 0-.46.373-.834.833-.834z" transform="rotate(-90 4.167 12.778)"/>
+                        <path d="M15.247 11.944h1.173c.46 0 .833.374.833.834 0 .46-.373.833-.833.833h-1.173c-.46 0-.833-.373-.833-.833 0-.46.373-.834.833-.834z" transform="rotate(-90 15.833 12.778)"/>
+                        <path d="M10 10.648c-.173.001-.342-.043-.483-.128L6.183 8.52c-.374-.226-.463-.667-.2-.987.128-.155.323-.26.542-.293.22-.031.444.012.625.122L10 9.058l2.833-1.817c.369-.235.89-.172 1.167.142.276.313.202.758-.167.994l-3.333 2.13c-.144.091-.32.141-.5.141z"/>
+                        <path d="M10 9.228c-.46 0-.833-.317-.833-.71V2.84c0-.393.373-.71.833-.71.46 0 .833.317.833.71v5.679c0 .392-.373.71-.833.71z"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
